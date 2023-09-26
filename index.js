@@ -3,35 +3,42 @@ var score = 0;
 // data of high score
 var highScores = [
   {
-    name: "rekha",
+    name: "Rekha",
+    score: 7
+  },
+  {
+    name: "Om Prakash",
     score: 5
   },
   {
-    name: "pari",
-    score: 3
-  },
-  {
-    name: "deepa",
+    name: "Deepika",
     score: 4
   }
 ]
 // array of objects
 var question = [{
-  question: "where do I live?",
-  answer: "jaipur"
+  question: "India's largest city by population?",
+  answer: "mumbai"
 }, {
-  question: "my fevorite superhero would be?",
-  answer: "superman"
+  question: "National Anthem of India?",
+  answer: "Jana Gana Mana"
 }, {
-  question: "my fevorite food would be?",
-  answer: "samosa"
+  question: "National Song of India?",
+  answer: "Vande Mataram"
 }, {
-  question: "my fevorite place to go for weekend?",
-  answer: "goa"
+  question: "Hindi Divas celebrate in India on?",
+  answer: "14th September"
 }, {
-  question: "the person who is most important in my life?",
-  answer: "pari"
-},];
+  question: "Which stste is known as India's Spice Garden?",
+  answer: "Kerala"
+},{
+  question: "Biggest District in india?",
+  answer: "Kachchh, Gujarat"
+},{
+  question: "Smallest District in India?",
+  answer: "Maha, Puducherry"
+}
+               ];
 // play function
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
