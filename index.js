@@ -8,11 +8,11 @@ var highScores = [
   },
   {
     name: "Om Prakash",
-    score: 5
+    score: 6
   },
   {
     name: "Deepika",
-    score: 4
+    score: 5
   }
 ]
 // array of objects
@@ -31,14 +31,14 @@ var question = [{
 }, {
   question: "Which stste is known as India's Spice Garden?",
   answer: "Kerala"
-},{
+}, {
   question: "Biggest District in india?",
-  answer: "Kachchh, Gujarat"
-},{
+  answer: "Kachchh"
+}, {
   question: "Smallest District in India?",
-  answer: "Maha, Puducherry"
+  answer: "Maha"
 }
-               ];
+];
 // play function
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
@@ -56,7 +56,7 @@ function play(question, answer) {
 function welcome() {
   var userName = readlineSync.question("what's your name? ");
 
-  console.log("welcome " + userName + " to DO YOU KNOW rekha kumari?");
+  console.log("welcome " + userName + " to INDIA GK quiz app?");
 }
 function game() {
   for (var i = 0; i < question.length; i++) {
